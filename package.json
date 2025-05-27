@@ -1,9 +1,13 @@
 {
   "name": "http-over-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library for creating http/https proxies that routes traffic through messaging services.",
   "keywords": ["http", "https", "proxy", "messaging", "text"],
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tigeryu8900/http-over-text.git"
+  },
   "scripts": {
     "build": "tsc",
     "client:google-voice": "node dist/clients/google-voice.js",

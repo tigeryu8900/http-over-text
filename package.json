@@ -1,0 +1,36 @@
+{
+  "name": "http-over-text",
+  "version": "1.0.0",
+  "description": "A library for creating http/https proxies that routes traffic through messaging services.",
+  "keywords": ["http", "https", "proxy", "messaging", "text"],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "client:google-voice": "node dist/clients/google-voice.js",
+    "client:imessage": "node dist/clients/imessage.js",
+    "client:whatsapp": "node dist/clients/whatsapp.js",
+    "server:google-voice": "node dist/servers/google-voice.js",
+    "server:imessage": "node dist/servers/imessage.js",
+    "server:whatsapp": "node dist/servers/whatsapp.js",
+    "proxy": "node dist/proxy.js"
+  },
+  "dependencies": {
+    "@cacheable/node-cache": "^1.5.5",
+    "@datastructures-js/priority-queue": "^6.3.3",
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^6.7.17",
+    "async-mutex": "^0.5.0",
+    "base85": "^3.2.0",
+    "better-osa-imessage": "^1.0.0",
+    "dotenv": "^16.5.0",
+    "osa-imessage": "^2.4.2",
+    "pino": "^9.7.0",
+    "puppeteer": "^24.9.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.5",
+    "typescript": "^5.5.3"
+  },
+  "private": false
+}
